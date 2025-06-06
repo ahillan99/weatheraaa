@@ -41,7 +41,7 @@ class _WeatherpageState extends State<WeatherPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(_weather?.cityName ?? "loading city ..."),
+            Text(_weather?.cityName ?? "waiting for location  ..."),
             Lottie.asset('assets/1.json'),
             Text('${_weather?.temperture.round()}°C'),
           ],
